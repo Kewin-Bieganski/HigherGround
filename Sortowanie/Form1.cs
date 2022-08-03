@@ -14,7 +14,6 @@ namespace Sortowanie
         private void b_loadFile_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = oFD_load.ShowDialog();
-            MessageBox.Show(dialogResult + " " + oFD_load.CheckFileExists + " " + oFD_load.FileName);
             if (dialogResult == DialogResult.OK && oFD_load.CheckFileExists)
             {
                 fileContentSort = new FileContentSort(oFD_load.FileName);

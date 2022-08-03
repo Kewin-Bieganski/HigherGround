@@ -1,5 +1,8 @@
 ﻿namespace Sortowanie
 {
+    /// <summary>
+    /// Klasa BubbleSort reprezentuje algorytm sortowania BubbleSort.
+    /// </summary>
     internal class BubbleSort : ISortAlgoritm
     {
         public void Sort(ref string[] input, bool isNumeric)

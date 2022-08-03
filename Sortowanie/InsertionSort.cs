@@ -1,5 +1,8 @@
 ﻿namespace Sortowanie
 {
+    /// <summary>
+    /// Klasa InsertionSort reprezentuje algorytm sortowania InsertionSort.
+    /// </summary>
     internal class InsertionSort : ISortAlgoritm
     {
         public void Sort(ref string[] input, bool isNumeric)

@@ -1,5 +1,8 @@
 ﻿namespace Sortowanie
 {
+    /// <summary>
+    /// Klasa QuickSort reprezentuje algorytm sortowania QuickSort.
+    /// </summary>
     internal class QuickSort : ISortAlgoritm
     {
         private bool isNumeric;
@@ -9,7 +12,13 @@
             sort(ref input, 0, input.Length - 1);
         }
 
-        public void sort(ref string[] input, int leftIndex, int rightIndex)
+        /// <summary>
+        /// Metoda sort jest rekurencyjna i sortuje input.
+        /// </summary>
+        /// <param name="input">Input</param>
+        /// <param name="leftIndex">Lewy skraj zakresu</param>
+        /// <param name="rightIndex">Prawy skraj zakresu</param>
+        private void sort(ref string[] input, int leftIndex, int rightIndex)
         {
             var i = leftIndex;
             var j = rightIndex;

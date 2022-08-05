@@ -45,8 +45,8 @@ namespace Tools
                 segmentRest = segment.Length % 255;
                 segmentMultiplier = (segment.Length - segmentRest) / 255;
                 output.AddRange(Enumerable.Repeat(CharactersCount(255, segment[0]), segmentMultiplier));
-                if (segmentRest > 0)
-                    output.Add(CharactersCount(segmentRest, segment[0]));
+                if(segmentRest > 0)
+                output.Add(CharactersCount(segmentRest, segment[0]));
             }
             return output;
         }
